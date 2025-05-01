@@ -32,18 +32,28 @@
             color: #ffeb3b;
             margin: 0;
         }
-        .project {
+        .steps {
             background: rgba(60, 60, 60, 0.7);
             padding: 15px;
             border-radius: 5px;
             border-left: 4px solid #ffeb3b;
         }
-        a {
-            color: #ffeb3b;
-            text-decoration: none;
+        .steps ul {
+            list-style-type: none;
+            padding-left: 0;
         }
-        a:hover {
-            text-decoration: underline;
+        .steps li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .steps li::before {
+            content: "✔";
+            color: #ffeb3b;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: 2px;
         }
         footer {
             text-align: center;
@@ -62,14 +72,21 @@
             <p>Data Cleaning & Preparation</p>
         </header>
 
-        <section class="project">
-            <h2>Project Details</h2>
-            <p>This project involves cleaning and preparing data for analysis.</p>
-            <a href="https://github.com/Moses032005/Midterm-Lab-Task-1" target="_blank">View on GitHub</a>
+        <section class="steps">
+            <h2>Steps for Data Cleaning & Preparation</h2>
+            <ul>
+                <li>Import the raw file</li>
+                <li>Fit the width and height of columns and rows</li>
+                <li>Eliminate unnecessary spaces</li>
+                <li>Delete NULL values</li>
+                <li>Remove duplicates</li>
+                <li>Normalize the data (1NF, 2NF, 3NF)</li>
+                <li>Convert tables into a Physical Data Model</li>
+            </ul>
         </section>
 
         <footer>
-            <p>Find me on <a href="https://github.com/Moses032005" target="_blank">GitHub</a></p>
+            <p>Midterm Lab Task 1 | BSIS Student</p>
         </footer>
     </div>
 </body>
