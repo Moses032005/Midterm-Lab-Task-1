@@ -10,17 +10,15 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            overflow-x: hidden;
             background-color: #222;
             color: #fff;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 30px auto;
             padding: 20px;
             background-color: rgba(50, 50, 50, 0.85);
             border-radius: 10px;
-            margin-top: 30px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
         header {
@@ -28,9 +26,8 @@
             padding: 20px 0;
             border-bottom: 2px solid #ffeb3b;
         }
-        h1 {
+        h1, h2 {
             color: #ffeb3b;
-            margin: 0;
         }
         .steps {
             background: rgba(60, 60, 60, 0.7);
@@ -55,6 +52,16 @@
             left: 0;
             top: 2px;
         }
+        .images {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .images img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -69,7 +76,7 @@
     <div class="container">
         <header>
             <h1>Midterm Lab Task 1</h1>
-            <p>Data Cleaning & Preparation</p>
+            <p>Data Cleaning & Preparation using Excel</p>
         </header>
 
         <section class="steps">
@@ -83,6 +90,20 @@
                 <li>Normalize the data (1NF, 2NF, 3NF)</li>
                 <li>Convert tables into a Physical Data Model</li>
             </ul>
+        </section>
+
+        <section class="images">
+            <h2>Before & After</h2>
+            <p>Raw Data:</p>
+            <img src="https://github.com/user-attachments/assets/eaf36462-bb81-4b7b-9c6e-7c3f90eb1a9c" alt="Raw Data Screenshot">
+            <p>Cleaned Data:</p>
+            <img src="https://github.com/user-attachments/assets/fc21de2d-ef74-4d00-9999-6e61e897a286" alt="Cleaned Data Screenshot">
+        </section>
+
+        <section class="images">
+            <h2>Data Model</h2>
+            <p>Entity Relationship Diagram:</p>
+            <img src="https://github.com/user-attachments/assets/1f563f1e-61e2-40a1-8c6e-6adb11d40af4" alt="ER Diagram Screenshot">
         </section>
 
         <footer>
