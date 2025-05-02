@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            font-family: 'Arial', sans-serif; /* Maintain original font */
         }
         
         #binary-rain {
@@ -26,6 +27,7 @@
             overflow: hidden;
             z-index: -1;
             background-color: #000;
+            font-family: 'Courier New', monospace; /* Only for binary digits */
         }
         
         .binary-digit {
@@ -44,7 +46,7 @@
             to { opacity: 0.8; }
         }
 
-        /* Content Styles */
+        /* Content Styles - Font family remains Arial throughout */
         .container {
             max-width: 900px;
             margin: 30px auto;
@@ -54,30 +56,36 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
             position: relative;
             border: 1px solid #333;
+            font-family: 'Arial', sans-serif; /* Explicitly set */
         }
         header {
             text-align: center;
             padding: 20px 0;
             border-bottom: 2px solid #ffeb3b;
+            font-family: 'Arial', sans-serif;
         }
         h1, h2 {
             color: #ffeb3b;
+            font-family: 'Arial', sans-serif;
         }
         .steps {
             background: rgba(40, 40, 40, 0.9);
             padding: 15px;
             border-radius: 5px;
             border-left: 4px solid #ffeb3b;
+            font-family: 'Arial', sans-serif;
         }
         .steps ul {
             list-style-type: none;
             padding-left: 0;
+            font-family: 'Arial', sans-serif;
         }
         .steps li {
             margin-bottom: 10px;
             padding-left: 20px;
             position: relative;
             color: #fff;
+            font-family: 'Arial', sans-serif;
         }
         .steps li::before {
             content: "✔";
@@ -86,10 +94,12 @@
             position: absolute;
             left: 0;
             top: 2px;
+            font-family: 'Arial', sans-serif;
         }
         .images {
             text-align: center;
             margin-top: 20px;
+            font-family: 'Arial', sans-serif;
         }
         .images img {
             max-width: 100%;
@@ -104,6 +114,7 @@
             border-top: 2px solid #444;
             margin-top: 30px;
             color: #aaa;
+            font-family: 'Arial', sans-serif;
         }
         .portfolio-link {
             display: inline-block;
@@ -115,12 +126,14 @@
             border-radius: 5px;
             font-weight: bold;
             transition: background-color 0.3s;
+            font-family: 'Arial', sans-serif;
         }
         .portfolio-link:hover {
             background-color: #ffc107;
         }
         p {
             color: #ddd;
+            font-family: 'Arial', sans-serif;
         }
     </style>
 </head>
